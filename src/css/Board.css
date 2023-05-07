@@ -1,0 +1,25 @@
+.board-container{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.game-board{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+}
+.game-board2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 255, 179);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.block{
+    width: 20px;
+    height: 20px;
+}

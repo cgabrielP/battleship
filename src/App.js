@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import '../src/css/App.css';
-import Table from './components/Table';
 import Menu from './components/Menu';
+import Boats from './components/Boats';
 
 function App() {
   const [view,setView]=useState(false)
   return (
     <div className='App'>
     {view?
-    <Table/>
+    <Boats/>
     :
     <Menu setView={setView}/>
     }

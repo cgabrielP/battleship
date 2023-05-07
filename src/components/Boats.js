@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
-import "../css/Table.css"
-const Table = () => {
+import "../css/Boats.css"
+import Board from './Board'
+const Boats = () => {
     const [rotation, setRotation] = useState(0)
     const optionContainer = useRef(null)
     const flip = () => {
@@ -10,11 +11,12 @@ const Table = () => {
         setRotation(newRotation);
         shipTypes.forEach(shipType => shipType.style.transform = `rotate(${newRotation}deg)`);
     }
-
+   
 
     return (
         <>
-            <div>Table</div>
+        <Board/>
+            <div>Boats</div>
             <div className="option-container" ref={optionContainer}>
                 <div className='destroyer destroyer-preview' draggable="true"></div>
                 <div className='submarine-preview submarine' draggable="true"></div>
@@ -27,4 +29,4 @@ const Table = () => {
     )
 }
 
-export default Table
+export default Boats
